@@ -93,9 +93,9 @@ For this problem, 8 components were enough to capture more than 95% of the total
 |RandomForestRegressor with lag features       | 73.717     | 0.625    | 73.75     | 0.308   |
 |RandomForestRegressor with PCA                | 88.921     | 0.401    | 78.614    | 0.214   |
 
-- Models that was trained without lag features has high average errors and does not fit the data well as can be seen through the extremely low R2
+- Models that was trained without lag features have high average errors and does not fit the data well as can be seen through the extremely low R2
 - With the lag features, the performance significantly increased with the lower average RMSE score from cross validating, and even lower with unseen test set. These models also fit the data better with decent R2 scores in both set.
-- Models with PCA performs better than the default one, but still worse than the model with lag features.
+- Models with PCA perform better than the default one, but are still worse than the models with lag features.
 - With feature importances plot, it can be clearly seen that the **lag features** are crucial for the estimator.
 
 => Overall, **Linear Regression with lag features** has the highest performance.
